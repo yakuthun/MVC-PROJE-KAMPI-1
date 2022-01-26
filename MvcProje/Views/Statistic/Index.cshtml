@@ -1,0 +1,55 @@
+﻿@model EntityLayer.Concrete.Category
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+<h2>İstatistik Ödev</h2>
+
+
+<div class="row">
+    <div class="col-12 col-sm-4">
+        <div class="info-box bg-light">
+            <div class="info-box-content">
+                <span class="info-box-text text-center text-muted">Toplam Kategori Sayısı</span>
+                <span class="info-box-number text-center text-muted mb-0">@ViewBag.d1</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4">
+        <div class="info-box bg-light">
+            <div class="info-box-content">
+                <span class="info-box-text text-center text-muted">Yazılım kategorisine ait başlık sayısı</span>
+                <span class="info-box-number text-center text-muted mb-0">@ViewBag.d2</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4">
+        <div class="info-box bg-light">
+            <div class="info-box-content">
+                <span class="info-box-text text-center text-muted">Yazar adında 'a' harfi geçen yazar sayısı</span>
+                <span class="info-box-number text-center text-muted mb-0">@ViewBag.d3</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-sm-4">
+        <div class="info-box bg-light">
+            <div class="info-box-content">
+                <span class="info-box-text text-center text-muted">En fazla başlığa sahip kategori adı</span>
+                <span class="info-box-number text-center text-muted mb-0">@ViewBag.d4</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4">
+        <div class="info-box bg-light">
+            <div class="info-box-content">
+                <span class="info-box-text text-center text-muted">Kategori tablosunda durumu true olan kategoriler ile false olan kategoriler arasındaki sayısal fark</span>
+                <span class="info-box-number text-center text-muted mb-0">@ViewBag.d5</span>
+            </div>
+        </div>
+    </div>
+   
+</div>

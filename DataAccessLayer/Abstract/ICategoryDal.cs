@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface ICategoryDal:IRepository<Category>
+    public interface ICategoryDal:IRepository<Category>//IRepository isimli interface'den kalıtsal yolla miras alıyor
     {
        
-
     }
 }
